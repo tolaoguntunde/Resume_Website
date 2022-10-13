@@ -9,7 +9,7 @@ pipeline {
      
     stage('deployment') {
       environment { 
-                SSH_CRED = credentials('blank-vm-pem')
+                SSH_CRED = credentials('jenkinstest-pem')
             }
       steps {
                 
