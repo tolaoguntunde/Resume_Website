@@ -16,8 +16,7 @@ pipeline {
                 script {
                     sh """
                     #!/bin/bash
-										
-										echo "connecting to remote or deploy server"	
+		    echo "connecting to remote or deploy server"	
                     ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@ec2-3-97-8-155.ca-central-1.compute.amazonaws.com << EOF
                     sudo mkdir resume
                     cd resume
@@ -32,3 +31,4 @@ pipeline {
     }
   }
 }
+  }
