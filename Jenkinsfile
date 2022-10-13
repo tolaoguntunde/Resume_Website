@@ -23,7 +23,7 @@ pipeline {
                     cd resume
                     sudo git clone https://github.com/tolaoguntunde/Resume_Website.git .
                     cd ..
-                    sudo mv resume /var/www/resume
+                    sudo cp -r resume /var/www/
                     echo "exiting terminal"
                     exit
                     << EOF
